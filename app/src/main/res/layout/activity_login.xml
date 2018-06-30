@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/common_logo"
+        android:tint="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="登 录"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/login_btn_register_bg"
+            style="@style/Button_Borderless" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnRegisgter"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="注 册"
+            android:textSize="16sp"
+            android:background="@drawable/login_btn_login_bg"
+            style="@style/Button_Borderless"/>
+    </LinearLayout>
+
+</RelativeLayout>

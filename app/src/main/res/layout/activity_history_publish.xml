@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_content"
+            android:layout_gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/toolbar_avatar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/background"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/toolbar_nickname"
+                />
+            <TextView
+                android:id="@+id/toolbar_nickname"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的昵称"
+                android:textSize="16sp"
+                android:paddingRight="36dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <View
+    android:id="@+id/toolbar_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@drawable/toolbar_shadow"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Container"
+        android:layout_marginTop="1dp"/>
+
+</LinearLayout>

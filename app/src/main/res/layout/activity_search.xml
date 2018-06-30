@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="大家都在搜XXXXX"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/fragment_home_search_tv_bg"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_marginBottom="6dp"
+            android:drawableLeft="@drawable/icon_left_search_pressed"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_cancel"
+            />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:text="取消"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

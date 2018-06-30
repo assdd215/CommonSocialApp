@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_account"
+        style="@style/LoginInputEditText"
+        android:hint="输入账号..."
+        android:layout_marginTop="96dp"
+        android:drawableLeft="@drawable/ic_account"
+        android:drawableTint="@color/light_grey"
+        />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_password"
+        style="@style/LoginInputEditText"
+        android:hint="输入密码..."
+        android:layout_below="@id/et_account"
+        android:layout_marginTop="48dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:inputType="textPassword"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        style="@style/LoginInputEditText"
+        android:layout_below="@id/et_password"
+        android:text="登 录"
+        android:background="@color/line_grey"
+        android:layout_marginTop="48dp"/>
+
+
+</RelativeLayout>
